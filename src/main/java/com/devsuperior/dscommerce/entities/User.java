@@ -134,34 +134,34 @@ public class User {
     }
     
     @Override
-	public Collection<? extends GrantedAuthority> getAuthorities() {
+    public Collection<? extends GrantedAuthority> getAuthorities() {
 		return roles;
 	}
-
-	@Override
+    
+    @Override
 	public String getUsername() {
 		return email;
 	}
-
-	@Override
+    
+    @Override
 	public boolean isAccountNonExpired() {
 		return true;
 	}
-
-	@Override
+    
+    @Override
 	public boolean isAccountNonLocked() {
 		return true;
 	}
-
-	@Override
+    
+    @Override
 	public boolean isCredentialsNonExpired() {
 		return true;
 	}
-
-	@Override
+    
+    @Override
 	public boolean isEnabled() {
 		return true;
 	}
 }
 
-}
+
