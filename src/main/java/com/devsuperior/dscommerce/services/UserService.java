@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 import com.devsuperior.dscommerce.dto.UserDTO;
 import com.devsuperior.dscommerce.entities.Role;
 import com.devsuperior.dscommerce.entities.User;
-import com.devsuperior.dscommerce.repositories.UserDetailsProjection;
+import com.devsuperior.dscommerce.projections.UserDetailsProjection;
 import com.devsuperior.dscommerce.repositories.UserRepository;
 
 import jakarta.transaction.Transactional;
