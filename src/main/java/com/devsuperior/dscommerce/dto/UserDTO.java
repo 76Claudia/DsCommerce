@@ -28,6 +28,7 @@ public class UserDTO {
 			email = entity.getEmail();
 			phone = entity.getPhone();
 			birthDate = entity.getBirthDate();
+			
 			for (GrantedAuthority role : entity.getAuthorities()) {
 				roles.add(role.getAuthority());
 			}
