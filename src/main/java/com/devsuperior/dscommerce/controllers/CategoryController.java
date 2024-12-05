@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.devsuperior.dscommerce.dto.CategoryDTO;
+import com.devsuperior.dscommerce.services.CategoryService;
 
 @RestController
 @RequestMapping(value = "/categories")

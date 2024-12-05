@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.security.core.GrantedAuthority;
+
 import com.devsuperior.dscommerce.entities.User;
 
 public class UserDTO {
@@ -57,5 +59,5 @@ public class UserDTO {
 		public List<String> getRoles() {
 			return roles;
 		}
-	}
+	
 }
