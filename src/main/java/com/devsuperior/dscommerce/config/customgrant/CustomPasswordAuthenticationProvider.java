@@ -5,10 +5,10 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import javax.naming.AuthenticationException;
 
-import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -57,7 +57,7 @@ public class CustomPasswordAuthenticationProvider implements AuthenticationProvi
 		this.passwordEncoder = passwordEncoder;
 	}
 	
-	@Override
+
 	public Authentication authenticate(Authentication authentication) throws AuthenticationException {
 		
 		CustomPasswordAuthenticationToken customPasswordAuthenticationToken = (CustomPasswordAuthenticationToken) authentication;

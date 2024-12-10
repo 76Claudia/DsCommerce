@@ -10,7 +10,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 public class DscommerceApplication implements CommandLineRunner {
 
 	@Autowired
-	private PasswordEncoder passwordEnconder;
+	private PasswordEncoder passwordEncoder;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(DscommerceApplication.class, args);
